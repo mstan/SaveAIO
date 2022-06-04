@@ -3,7 +3,7 @@ const SaveFileGameBoyAdvance = require('../lib/SaveFileGameBoyAdvance');
 const SaveFileNintendo64 = require('./lib/SaveFileNintendo64');
 
 async function main() {
-	const metroidFusionWiiU = new SaveFileGameBoyAdvance('src/Gameboy Advance/WiiUVC/Metroid Fusion/data_008_0000.bin',null,{ wiiUVirtualConsoleGameSaveSize: 32768 });
+	const metroidFusionWiiU = new SaveFileGameBoyAdvance('src/Gameboy Advance/WiiU VC/Metroid Fusion/data_008_0000.bin',null,{ wiiUVirtualConsoleGameSaveSize: 32768 });
 	await metroidFusionWiiU.init();
 
 	const metroidFusionGBA = new SaveFileGameBoyAdvance('src/Gameboy Advance/Everdrive GBA X5/metroid_fusion.sav','system');

@@ -1,3 +1,21 @@
+## Project status
+
+### Gameboy Advance
+Gameshark -> System  
+Gameshark SP -> System [TODO: system -> Gameshark SP]  
+Wii U VC <-> System  
+
+### Nintendo 64
+Emulator (Project 64) <-> System  
+
+### Super NES
+3DS VC -> System
+Wii U VC -> System [UNTESTED]
+System -> 3DS [NOT WORKING]
+
+
+
+
 ## Design guide
 
 ### 1. All systems use the system's save file storage as authority.
@@ -20,3 +38,7 @@ In the case of any Virtual console system, the emulated target system should be 
 For example, for a Gameboy Advance game save that comes from a Wii U Virtual console, this game save should be ingested by SaveFileGameboyAdance, NOT SaveFileWiiU. 
 
 SaveFileGameoyAdvance may store metadata ABOUT and export a save of the WiiU Virtual console container for purposes of reinjection of the file post-save modification.
+
+
+
+
