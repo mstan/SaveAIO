@@ -1,11 +1,10 @@
 require('dotenv').config();
-const SaveFileSuperNES = require('./lib/SaveFileSuperNES');
-const SaveFileNintendo64 = require('./lib/SaveFileNintendo64');
+const SaveFilePSX = require('./lib/SaveFilePSX');
 
 
 async function main() {
-	const superMario64DexDrive = new SaveFileNintendo64('src/Nintendo 64/DexDrive/Super Mario 64/super-mario-64.1091.n64');
-	await superMario64DexDrive.init();
-	await superMario64DexDrive.exportVariantsToDisk('output/super_mario_64.fla');
+	const ff7DexDrive = new SaveFilePSX('src/Playstation/DexDrive/Final Fantasy VII/final-fantasy-vii.26303.gme');
+	await ff7DexDrive.init();
+	await ff7DexDrive.exportToFile('output/ffvii.gme');
 }
 main();
