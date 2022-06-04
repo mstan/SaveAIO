@@ -4,13 +4,8 @@ const SaveFileNintendo64 = require('./lib/SaveFileNintendo64');
 
 
 async function main() {
-	const superMarioWorld3DS = new SaveFileSuperNES('src/Super NES/3DS Virtual Console/Super Mario World/KTR-UAAE.ves');
-	await superMarioWorld3DS.init();
-	// await superMarioWorld3DS.exportToFile('output/super_mario_world.srm');
-	const superMarioWorldSNES = new SaveFileSuperNES('src/Super NES/System/Super Mario World/Super Mario World.srm')
-	await superMarioWorldSNES.init();
-	const saveBufferToInject = await superMarioWorldSNES.exportToMemory();
-	await superMarioWorld3DS.inject3DSVirtualConsoleSave(saveBufferToInject);
-	await superMarioWorld3DS.export3DSVirtualConsoleSaveToDisk('output/KTR-UAAE.ves');
+	const superMario64DexDrive = new SaveFileNintendo64('src/Nintendo 64/DexDrive/Super Mario 64/super-mario-64.1091.n64');
+	await superMario64DexDrive.init();
+	await superMario64DexDrive.exportVariantsToDisk('output/super_mario_64.fla');
 }
 main();
