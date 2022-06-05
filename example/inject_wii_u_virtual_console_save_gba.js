@@ -1,6 +1,5 @@
 require('dotenv').config();
 const SaveFileGameBoyAdvance = require('../lib/SaveFileGameBoyAdvance');
-const SaveFileNintendo64 = require('./lib/SaveFileNintendo64');
 
 async function main() {
 	const metroidFusionWiiU = new SaveFileGameBoyAdvance('src/Gameboy Advance/WiiU VC/Metroid Fusion/data_008_0000.bin',null,{ wiiUVirtualConsoleGameSaveSize: 32768 });

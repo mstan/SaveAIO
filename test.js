@@ -1,10 +1,10 @@
 require('dotenv').config();
-const SaveFilePSX = require('./lib/SaveFilePSX');
+const SaveFileNES = require('./lib/SaveFileNES');
 
 
 async function main() {
-	const ff7DexDrive = new SaveFilePSX('src/Playstation/DexDrive/Final Fantasy VII/final-fantasy-vii.26303.gme');
-	await ff7DexDrive.init();
-	await ff7DexDrive.exportToFile('output/ffvii.gme');
+	const legendOfZelda = new SaveFileNES('src/NES/Wii/Legend of Zelda/the-legend-of-zelda.19461.bin');
+	await legendOfZelda.init();
+	await legendOfZelda.exportToFile('output/loz.sav');
 }
 main();
