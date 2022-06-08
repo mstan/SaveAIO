@@ -9,7 +9,7 @@ async function main() {
 	await metroidFusionGBA.init();
 	const saveBufferToInject = await metroidFusionGBA.exportToMemory();	
 	
-	await metroidFusionWiiU.injectWiiUVirtualConsoleSave(saveBufferToInject);
+	await metroidFusionWiiU.injectSave(saveBufferToInject);
 	await metroidFusionWiiU.exportWiiUVirtualConsoleSaveToDisk('output/data_008_000.bin');
 
 }
