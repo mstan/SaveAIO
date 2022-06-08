@@ -2,7 +2,7 @@
 
 ### Gameboy Advance  
 Gameshark -> System  
-Gameshark SP -> System
+Gameshark SP -> System  
 System -> Gameshark SP [UNTESTED]  
 Wii U VC -> System  
 System -> Wii U VC  
