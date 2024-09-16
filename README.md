@@ -104,7 +104,7 @@ Example of a 2-byte endian swap is as follows on the following array:
 ```
 
 #### swapSaveFileWords([bytes = 2])
-This function swaps the "words" of a save file. The user cna specify the level of bytes they wanty word swapped. if the user does not speicfy, the system will default to swapping woards at every 2 bytes (16-bits), which is the presumed default for all N64 word swaps.
+This function swaps the "words" of a save file. The user can specify the level of bytes they wanty word swapped. if the user does not specify, the system will default to swapping woards at every 2 bytes (16-bits), which is the presumed default for all N64 word swaps.
 
 Example of a 2-byte word swap is as follows on the following array:
 ```
