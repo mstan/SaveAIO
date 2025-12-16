@@ -1,3 +1,6 @@
+This repo is deprecated in favor of https://github.com/mstan/node-saveaio
+
+
 ## Project status
 
 ### Gameboy Advance  
